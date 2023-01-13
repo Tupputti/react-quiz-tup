@@ -1,0 +1,121 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "question": [
+    {
+      "category": "Science & Nature",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "How many bones are in the human body?",
+      "correct_answer": "206",
+      "incorrect_answers": ["203", "209", "200"]
+    },
+    {
+      "category": "Art",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who painted &quot;Swans Reflecting Elephants&quot;, &quot;Sleep&quot;, and &quot;The Persistence of Memory&quot;?",
+      "correct_answer": "Salvador Dali",
+      "incorrect_answers": [
+        "Jackson Pollock",
+        "Vincent van Gogh",
+        "Edgar Degas"
+      ]
+    },
+    {
+      "category": "Vehicles",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Automobiles produced by Telsa Motors operate on which form of energy?",
+      "correct_answer": "Electricity",
+      "incorrect_answers": ["Gasoline", "Diesel", "Nuclear"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What video game sparked controversy because of its hidden &quot;Hot Coffee&quot; minigame?",
+      "correct_answer": "Grand Theft Auto: San Andreas",
+      "incorrect_answers": [
+        "Grand Theft Auto: Vice City",
+        "Hitman: Blood Money",
+        "Cooking Mama"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the anime Black Butler, who is betrothed to be married to Ciel Phantomhive?",
+      "correct_answer": "Elizabeth Midford",
+      "incorrect_answers": [
+        "Rachel Phantomhive",
+        "Alexis Leon Midford",
+        "Angelina Dalles"
+      ]
+    },
+    {
+      "category": "Science & Nature",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "71% of the Earth&#039;s surface is made up of",
+      "correct_answer": "Water",
+      "incorrect_answers": ["Deserts", "Continents", "Forests"]
+    },
+    {
+      "category": "Animals",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the collective noun for a group of crows?",
+      "correct_answer": "Murder",
+      "incorrect_answers": ["Pack", "Gaggle", "Herd"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which of the following is NOT one of the main characters in Grand Theft Auto V&rsquo;s story mode?",
+      "correct_answer": "Tommy Vercetti",
+      "incorrect_answers": [
+        "Michael de Santa",
+        "Franklin Clinton",
+        "Trevor Phillips"
+      ]
+    },
+    {
+      "category": "Entertainment: Books",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What was Sir Handel&#039;s original name in &quot;The Railway Series&quot; and it&#039;s animated counterpart &quot;Thomas and Friends?&quot;",
+      "correct_answer": "Falcon",
+      "incorrect_answers": ["Eagle", "Kyte", "Swallow"]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "When was the Playstation 3 released?",
+      "correct_answer": "November 11, 2006",
+      "incorrect_answers": [
+        "January 8, 2007",
+        "December 25, 2007",
+        "July 16, 2006"
+      ]
+    }
+  ]
+}
