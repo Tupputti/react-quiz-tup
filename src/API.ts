@@ -18,7 +18,7 @@ export enum Difficulty {
 }
 
 export const fetchQuizQuestions = async () => {
-  const endpoint = `http://localhost:3000/question`;
+  const endpoint = `http://localhost:3001/question`;
   const data = await (await fetch(endpoint)).json();
   return data.map((question: Question) => ({
     ...question,

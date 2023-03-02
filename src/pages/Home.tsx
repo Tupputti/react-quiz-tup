@@ -1,19 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { fetchQuizQuestions } from "./API";
-// components
-import QuestionCard from "./components/QuestionCard";
-// Types
-import { QuestionState, Difficulty } from "./API";
-// styles
-import { GlobalStyle, Wrapper } from "./App.styles";
-import {
-  Box,
-  FormControl,
-  Input,
-  Link,
-  styled,
-  TextField,
-} from "@mui/material";
+import { fetchQuizQuestions, QuestionState } from "../API";
+import { GlobalStyle, Wrapper } from "../App.styles";
+import QuestionCard from "../components/QuestionCard";
 
 export type AnswerObject = {
   question: string;
@@ -22,17 +10,7 @@ export type AnswerObject = {
   correctAnswer: string;
 };
 
-const QuestionNumberContainer = styled(Box)({
-  maxWidth: 1100,
-  background: "#ebfeff",
-  borderRadius: 10,
-  border: "2px solid #0085a3",
-  padding: 20,
-  boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.25)",
-  textAlign: "center",
-});
-
-const App = () => {
+const Home = () => {
   const [totalQuestions, _setTotalQuestions] = useState<number>(3);
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState<QuestionState[]>([]);
@@ -46,7 +24,6 @@ const App = () => {
     setQuizOver(false);
 
     const newQuestions = await fetchQuizQuestions();
-    console.log("newQuestions", newQuestions);
 
     setQuestions(newQuestions);
     setScore(0);
@@ -85,20 +62,6 @@ const App = () => {
       setNumber(nextQuestion);
     }
   };
-
-  // const changeQuestionsNumber = (questionNumber: any) => {
-  //   setTotalQuestions(questionNumber);
-  // };
-
-  // const resetQuestion = (questionNumber: any) => {
-  //   setTotalQuestions(10);
-  //   setLoading(false);
-  //   setQuestions([]);
-  //   setNumber(0);
-  //   setUserAnswers([]);
-  //   setScore(0);
-  //   setQuizOver(true);
-  // };
 
   useEffect(() => {
     if (quizOver) {
@@ -146,4 +109,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;

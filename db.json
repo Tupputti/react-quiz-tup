@@ -14,7 +14,15 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "user": {
+      "id": 1,
+      "fname": "Tup",
+      "lname": "Putthi",
+      "username": "tup47257@gmail.com",
+      "password": "miniproject",
+      "email": "tup47257@gmail.com",
+      "avatar": "https://www.melivecode.com/users/1.png"
+    }
   },
   "question": [
     {
